@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Hide the default checkbox */
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    /* Style for the custom checkbox container */
+    .custom-checkbox {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: grey; /* Default background color */
+    }
+
+    /* Style for the checkmark inside the checkbox */
+    .custom-checkbox::after {
+      content: '\2713'; /* Unicode character for checkmark */
+      font-size: 16px;
+      color: black;
+      display: none;
+      text-align: center;
+      line-height: 20px;
+    }
+
+    /* Style for the custom checkbox when checked */
+    input[type="checkbox"]:checked + .custom-checkbox {
+      background-color: white; /* Change background color when checked */
+    }
+
+    /* Display the checkmark when the checkbox is checked */
+    input[type="checkbox"]:checked + .custom-checkbox::after {
+      display: block;
+    }
+
+    /* Style for the label (optional) */
+    label {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Checkbox and label -->
+  <input type="checkbox" id="myCheckbox">
+  <label for="myCheckbox" class="custom-checkbox"></label>
+  <label for="myCheckbox">My Checkbox</label>
+
+</body>
+</html>

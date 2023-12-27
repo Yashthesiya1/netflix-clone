@@ -1,0 +1,212 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Netflix Font', sans-serif;
+}
+
+body {
+    background-color: #232323 !important;
+}
+
+.body {
+    background-image: url(../Images/signin\ bg\ poster.jpg);
+    background-color: #232323;
+    background-blend-mode: soft-light;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shadow {
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.3) 85%, rgba(0, 0, 0, 0.8) 100%); */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    padding: 23px 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 48px;
+    width: 167px;
+}
+
+.main-part {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 60px 68px 40px;
+}
+
+.main-part h2 {
+    font-size: 32px;
+}
+
+/* .form-floating {
+    display: flex !important;
+    justify-content: center !important;
+    width: 330px !important;
+} */
+
+input {
+    background-color: #333333 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.label {
+    color: #8c8c8c;
+    --bs-body-bg: "transparent";
+    --bs-body-color-rgb: "white";
+}
+
+.start {
+    height: 58px;
+    background-color: rgb(240, 27, 27);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.remember {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox [type="checkbox"] {
+    background-color: #333333;
+}
+
+.sign:hover,
+.help:hover {
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.new-to {
+    color: #8c8c8c;
+    margin-top: 80px;
+}
+
+.sign {
+    color: white;
+    text-decoration: none;
+}
+
+.cdata {
+    color: #0071eb;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.cdata:hover {
+    text-decoration: underline;
+}
+
+.learn {
+    margin-top: 10px;
+}
+
+.privacy {
+    color: #0071eb;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 65px 50px 65px;
+    color: #737373;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-sec {
+    width: 1450px;
+}
+
+.call {
+    font-weight: 500;
+}
+
+#select-Langauge {
+    text-align: start;
+    background-color: black;
+    color: #737373;
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-size: 15px;
+    position: relative;
+    border: 1px solid #737373;
+}
+
+.svg {
+    position: absolute;
+    z-index: 3;
+    color: #737373;
+    margin-left: 5px;
+}
+
+#err,
+#err2 {
+    color: red;
+    margin-top: 5px;
+    /* text-align: center; */
+    /* margin-left: 9px; */
+    font-size: 16px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 70%;
+        max-width: 150px;
+    }
+
+    .main-part {
+        padding: 15% 5% 5%;
+    }
+
+    .start {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 90%;
+        max-width: 120px;
+    }
+
+    .main-part {
+        padding: 20% 5% 5%;
+    }
+
+    .start {
+        font-size: 1em;
+    }
+}
